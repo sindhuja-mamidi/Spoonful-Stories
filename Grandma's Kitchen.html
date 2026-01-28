@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grandma's Kitchen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ---- STYLES UNCHANGED (only color changed) ---- */
+:root {
+  --dark-green: #5a2e0c;
+  --soft-green: #e29254;   /* DARK ORANGE BACKGROUND */
+  --card-bg: #ffffff;
+  --text-black: #000000;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--soft-green);
+  font-family:'Inter',sans-serif;
+  color:var(--text-black);
+  line-height:1.8;
+  padding:50px 20px;
+}
+
+/* BACK TO HOME BUTTON */
+.back-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #5a2e0c;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.back-home:hover {
+  background: #5a2e0c;
+  color: #ffffff;
+}
+
+.header{text-align:center;max-width:900px;margin:0 auto 80px;}
+.header h1{
+  font-family:'Playfair Display', serif;
+  font-size:56px;
+  color:#5a2e0c;          /* earthy brown – grandma vibe */
+  margin-bottom:20px;
+  letter-spacing:1.5px;
+}
+
+.header p{font-size:22px;color:#fff;}
+.section{max-width:1200px;margin:auto;margin-bottom:80px;}
+.section h2{
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  color:#5a2e0c;          /* same tone for consistency */
+  margin-bottom:40px;
+  text-align:center;
+  letter-spacing:1.2px;
+}
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+.recipe-card{
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+.recipe-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:20px;
+}
+.recipe-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  color:#5a2e0c;
+  margin-bottom:12px;
+}
+.recipe-card p{font-size:17px;margin-bottom:15px;}
+.recipe-card h4{font-size:19px;margin:18px 0 8px;}
+.recipe-card ul, .recipe-card ol{padding-left:20px;}
+.recipe-card li{font-size:16px;margin-bottom:8px;}
+.quote{text-align:center;font-size:22px;font-style:italic;margin-top:80px;color:#fff;}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">← Back to Home</a>
+
+<div class="header">
+  <h1>Grandma’s Kitchen</h1>
+  <p>
+    Timeless recipes passed down through generations,  
+    cooked with love, patience, and tradition.
+  </p>
+</div>
+
+<div class="section">
+<h2>Authentic Traditional Recipes</h2>
+
+<div class="recipe-grid">
+
+<!-- Ragi Mudde -->
+<div class="recipe-card">
+<img src="./images/ragi-mudde.jpg">
+<h3>Ragi Mudde</h3>
+<p>Traditional South Indian staple rich in nutrition.</p>
+<p><strong>Benefit:</strong> Strengthens bones, improves digestion, and provides long-lasting energy.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Ragi flour</li>
+<li>Water</li>
+<li>Salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Boil water with salt.</li>
+<li>Add ragi flour and stir continuously.</li>
+<li>Cook until firm.</li>
+</ol>
+</div>
+
+<!-- Pesarattu -->
+<div class="recipe-card">
+<img src="./images/Pesarattu.jpg">
+<h3>Pesarattu</h3>
+<p>Protein-rich green gram dosa from Andhra kitchens.</p>
+<p><strong>Benefit:</strong> Improves metabolism and keeps you full for hours.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Green gram</li>
+<li>Ginger</li>
+<li>Cumin</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Grind soaked green gram.</li>
+<li>Prepare dosa on hot tawa.</li>
+</ol>
+</div>
+
+<!-- Yerra Gummadi Pulusu -->
+<div class="recipe-card">
+<img src="./images/yerra-gummadi-pulusu.jpg">
+<h3>Yerra Gummadi Pulusu</h3>
+<p>Traditional Andhra-style pumpkin tamarind curry.</p>
+<p><strong>Benefit:</strong> Improves digestion, boosts immunity, and balances body heat.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Red pumpkin (Yerra gummadi)</li>
+<li>Tamarind extract</li>
+<li>Jaggery</li>
+<li>Green chilies</li>
+<li>Mustard seeds</li>
+<li>Curry leaves</li>
+<li>Turmeric & salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Cook pumpkin pieces until soft.</li>
+<li>Add tamarind extract, jaggery, turmeric, and salt.</li>
+<li>Simmer until flavors blend.</li>
+<li>Prepare tempering and add to curry.</li>
+<li>Serve hot with rice.</li>
+</ol>
+</div>
+
+
+<!-- Talakaya Kura -->
+<div class="recipe-card">
+<img src="./images/talakaya-kura.jpg">
+<h3>Talakaya Kura (Goat Head Curry)</h3>
+<p>Authentic Telangana-style spicy goat head curry.</p>
+
+<p><strong>Benefit:</strong> Rich in protein and minerals, boosts strength, and is traditionally believed to improve immunity.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Goat head (cleaned and cut)</li>
+<li>Onions (finely chopped)</li>
+<li>Ginger-garlic paste</li>
+<li>Green chilies</li>
+<li>Red chili powder</li>
+<li>Coriander powder</li>
+<li>Turmeric</li>
+<li>Garam masala</li>
+<li>Oil & salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Pressure cook goat head pieces until tender.</li>
+<li>Sauté onions in oil until golden brown.</li>
+<li>Add ginger-garlic paste and spices.</li>
+<li>Add cooked meat and simmer until thick.</li>
+<li>Serve hot with rice or jowar roti.</li>
+</ol>
+</div>
+
+<!-- Makhana (Grandma Style) -->
+<div class="recipe-card">
+<img src="./images/makhana-masala.jpg">
+<h3>Makhana (Grandma Style)</h3>
+<p>Old-style roasted fox nuts cooked with simple spices and love.</p>
+
+<p><strong>Benefit:</strong> Strengthens bones, supports digestion, and keeps the body light yet energetic.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Makhana (fox nuts)</li>
+<li>Ghee</li>
+<li>Cumin seeds</li>
+<li>Black pepper</li>
+<li>Turmeric</li>
+<li>Rock salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Dry roast makhana until crisp.</li>
+<li>Heat ghee and add cumin seeds.</li>
+<li>Add makhana, turmeric, pepper, and salt.</li>
+<li>Roast gently on low flame.</li>
+<li>Serve warm as a snack or side dish.</li>
+</ol>
+</div>
+
+
+<!-- Sweet Pongal -->
+<div class="recipe-card">
+<img src="./images/sweet-pongal.jpg">
+<h3>Sweet Pongal</h3>
+<p>Festival-special comfort food.</p>
+<p><strong>Benefit:</strong> Provides energy and improves mood.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>Rice</li>
+<li>Moong dal</li>
+<li>Jaggery</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Cook rice and dal.</li>
+<li>Add jaggery and ghee.</li>
+</ol>
+</div>
+
+</div>
+</div>
+
+<p class="quote">
+Food cooked with love becomes tradition.
+</p>
+
+</body>
+</html>

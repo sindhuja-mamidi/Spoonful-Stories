@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Budget Friendly Meals</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark-green: #519480;
+  --soft-green: #d1cece;
+  --card-bg: #ffffff;
+  --text-black: #000000;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--soft-green);
+  font-family:'Inter',sans-serif;
+  color:var(--text-black);
+  line-height:1.8;
+  padding:50px 20px;
+}
+
+/* BACK BUTTON */
+.back-home{
+  position:fixed;
+  top:20px;
+  left:20px;
+  background:#fff;
+  color:#0b3d2e;
+  padding:10px 18px;
+  border-radius:25px;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 6px 15px rgba(0,0,0,0.2);
+}
+.back-home:hover{
+  background:#0b3d2e;
+  color:#fff;
+}
+
+.header{text-align:center;max-width:900px;margin:0 auto 80px;}
+.header h1{
+  font-family:'Playfair Display', serif;
+  font-size:56px;
+  color:#2f3a3f;          /* deep charcoal – budget/professional */
+  margin-bottom:20px;
+  letter-spacing:1.4px;
+}
+
+.header p{font-size:22px;}
+
+.section{max-width:1200px;margin:auto;margin-bottom:80px;}
+.section h2{
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  color:#2f3a3f;          /* same tone for consistency */
+  margin-bottom:40px;
+  text-align:center;
+  letter-spacing:1.2px;
+}
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+
+.recipe-card{
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+.recipe-card img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:20px;
+}
+.recipe-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  color:#0b3d2e;
+  margin-bottom:10px;
+}
+.recipe-card p{font-size:17px;margin-bottom:12px;}
+.recipe-card h4{font-size:18px;margin:15px 0 8px;}
+.recipe-card ul,ol{padding-left:20px;}
+.recipe-card li{margin-bottom:6px;}
+
+.quote{text-align:center;font-size:22px;font-style:italic;color:#0b3d2e;}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">← Back to Home</a>
+
+<div class="header">
+  <h1>Budget Friendly Meals</h1>
+  <p>
+    Delicious food doesn’t have to be expensive.  
+    These meals are easy, affordable, and perfect for students & families.  
+    <strong>Smart budgeting in the kitchen means nutritious meals, less waste, and more savings.</strong>
+  </p>
+</div>
+
+<div class="section">
+<h2>Easy & Affordable Recipes</h2>
+
+<div class="recipe-grid">
+
+<!-- Lemon Poha -->
+<div class="recipe-card">
+<img src="./images/poha.jpg">
+<h3>Lemon Poha</h3>
+<p>Light, tangy, and extremely budget-friendly.</p>
+<p><strong>Benefit:</strong> Easy digestion, quick energy.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup poha</li>
+<li>1 lemon</li>
+<li>1 onion</li>
+<li>Oil, salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Wash poha gently in water and drain completely.</li>
+<li>Heat oil in a pan and sauté chopped onion until soft.</li>
+<li>Add salt and turmeric (optional) and mix.</li>
+<li>Add poha and gently mix on low flame.</li>
+<li>Turn off heat, add lemon juice, mix well.</li>
+<li>Serve hot with peanuts or curry leaves.</li>
+</ol>
+</div>
+
+<!-- Bread Upma -->
+<div class="recipe-card">
+<img src="./images/bread-upma.jpg">
+<h3>Bread Upma</h3>
+<p>Perfect use of leftover bread.</p>
+<p><strong>Benefit:</strong> Zero waste, filling meal.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>4 bread slices</li>
+<li>1 onion</li>
+<li>Oil & spices</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Cut bread slices into small pieces.</li>
+<li>Heat oil in a pan and sauté onions.</li>
+<li>Add spices like chili powder and salt.</li>
+<li>Add bread pieces and mix well.</li>
+<li>Cook for 3–4 minutes on low flame.</li>
+<li>Serve hot with chutney.</li>
+</ol>
+</div>
+
+<!-- Tomato Rice -->
+<div class="recipe-card">
+<img src="./images/tomato-rice.jpg">
+<h3>Tomato Garlic Rice</h3>
+<p>Spicy, tangy one-pot dish.</p>
+<p><strong>Benefit:</strong> Cheap, tasty, long-lasting energy.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup rice</li>
+<li>2 tomatoes</li>
+<li>Garlic & spices</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Heat oil and sauté garlic until aromatic.</li>
+<li>Add chopped tomatoes and cook till soft.</li>
+<li>Add spices and salt.</li>
+<li>Add washed rice and water.</li>
+<li>Cook till rice is fluffy.</li>
+<li>Serve hot with curd.</li>
+</ol>
+</div>
+
+<!-- Onion Pakoda -->
+<div class="recipe-card">
+<img src="./images/onion-pakora.jpg">
+<h3>Onion Pakoda</h3>
+<p>Crispy street-style snack on a budget.</p>
+<p><strong>Benefit:</strong> Affordable comfort food, perfect evening snack.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>2 onions (sliced)</li>
+<li>1 cup gram flour</li>
+<li>Salt & spices</li>
+<li>Oil for frying</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Mix onions with gram flour, salt, and spices.</li>
+<li>Add little water to form thick batter.</li>
+<li>Heat oil in deep pan.</li>
+<li>Drop small portions into hot oil.</li>
+<li>Fry till golden and crispy.</li>
+<li>Serve hot with chutney.</li>
+</ol>
+</div>
+
+<!-- Suji Halwa -->
+<div class="recipe-card">
+<img src="./images/sooji-halwa.jpg">
+<h3>Suji Halwa</h3>
+<p>Classic budget-friendly Indian sweet.</p>
+<p><strong>Benefit:</strong> Instant energy and minimal ingredients.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>½ cup suji</li>
+<li>¼ cup sugar</li>
+<li>Ghee & water</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Heat ghee and roast suji till aromatic.</li>
+<li>Slowly add water and stir continuously.</li>
+<li>Cook till thickened.</li>
+<li>Add sugar and mix well.</li>
+<li>Cook till glossy.</li>
+<li>Serve warm.</li>
+</ol>
+</div>
+
+<!-- Khichdi -->
+<div class="recipe-card">
+<img src="./images/vegetable-khichdi.jpg">
+<h3>Vegetable Khichdi</h3>
+<p>Comfort food on a budget.</p>
+<p><strong>Benefit:</strong> Complete nutrition, easy digestion.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>½ cup rice</li>
+<li>½ cup dal</li>
+<li>Vegetables</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Wash rice and dal thoroughly.</li>
+<li>Add vegetables, water, salt, and turmeric.</li>
+<li>Pressure cook for 3 whistles.</li>
+<li>Let pressure release naturally.</li>
+<li>Mix well and serve hot.</li>
+</ol>
+</div>
+
+</div>
+</div>
+
+<p class="quote">
+Eating well on a budget is a skill — and a superpower.
+</p>
+
+</body>
+</html>

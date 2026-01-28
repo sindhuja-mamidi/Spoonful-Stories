@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SPOONFUL STORIES</title>
+
+  <!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-main:#f5f1e8;        /* beige */
+      --primary:#4a6f52;       /* olive green */
+      --accent:#7a4a2e;        /* warm brown */
+      --card-bg:#ffffff;
+      --text-dark:#2f2f2f;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:var(--bg-main);
+      font-family:'Inter',sans-serif;
+      color:var(--text-dark);
+      line-height:1.7;
+    }
+
+    /* HERO SECTION */
+    .hero{
+      text-align:center;
+      padding:80px 20px 60px;
+    }
+
+    .hero h1{
+      font-family:'Playfair Display',serif;
+      font-size:3.5rem;
+      color:var(--accent);
+      letter-spacing:2px;
+      margin-bottom:14px;
+      text-transform:uppercase;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      color:#555;
+    }
+
+    /* CARDS SECTION */
+    .cards{
+      max-width:1200px;
+      margin:0 auto 80px;
+      padding:0 20px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:40px;
+    }
+
+    .card-link{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .card{
+      background:var(--card-bg);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 15px 35px rgba(0,0,0,0.12);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 25px 50px rgba(0,0,0,0.18);
+    }
+
+    .card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:22px;
+      text-align:center;
+    }
+
+    .card h3{
+      font-family:'Playfair Display',serif;
+      font-size:1.5rem;
+      color:var(--primary);
+      margin-bottom:6px;
+    }
+
+    .card span{
+      font-size:0.95rem;
+      color:#666;
+      font-style:italic;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:30px 10px;
+      background:none; /* removed footer background */
+    }
+
+    footer p{
+      font-size:1rem;
+      font-weight:700; /* bold footer */
+      color:#444;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .cards{
+        grid-template-columns:repeat(2,1fr);
+      }
+    }
+
+    @media(max-width:600px){
+      .cards{
+        grid-template-columns:1fr;
+      }
+      .hero h1{
+        font-size:2.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>SPOONFUL STORIES</h1>
+    <p>Where recipes meet memories.</p>
+  </section>
+
+  <!-- CATEGORY CARDS -->
+  <section class="cards">
+
+    <a href="Healthy Living.html" class="card-link">
+      <div class="card">
+        <img src="./images/healthy-living.jpg" alt="Healthy Living">
+        <div class="card-content">
+          <h3>Healthy Living</h3>
+          <span>Nourishing everyday meals</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="Grandma's Kitchen.html" class="card-link">
+      <div class="card">
+        <img src="./images/grandmas-kitchen.jpg" alt="Grandma's Kitchen">
+        <div class="card-content">
+          <h3>Grandma’s Kitchen</h3>
+          <span>Recipes passed with love</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="Street Food Chronicles.html" class="card-link">
+      <div class="card">
+        <img src="./images/street-food-chronicles.jpg" alt="Street Food">
+        <div class="card-content">
+          <h3>Street Food Chronicles</h3>
+          <span>Flavours from the streets</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="Student Meals.html" class="card-link">
+      <div class="card">
+        <img src="./images/student-meals.jpg"alt="Student Meals">
+        <div class="card-content">
+          <h3>Student Meals</h3>
+          <span>Quick, affordable & filling</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="Budget Meal Diaries.html" class="card-link">
+      <div class="card">
+        <img src="./images/budget-meal-diaries.jpg"alt="Budget Meals">
+        <div class="card-content">
+          <h3>Budget Meal Diaries</h3>
+          <span>Good food on a smart budget</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="Meal Planner.html" class="card-link">
+      <div class="card">
+        <img src="./images/meal-planner.jpg"alt="Meal Planner">
+        <div class="card-content">
+          <h3>Meal Planner</h3>
+          <span>Plan, cook & enjoy</span>
+        </div>
+      </div>
+    </a>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>COOK WITH LOVE ❤️ EAT WITH JOY 🍲</p>
+  </footer>
+
+</body>
+</html>

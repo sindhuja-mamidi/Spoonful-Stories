@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Healthy Living</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ---- STYLES UNCHANGED ---- */
+:root {
+  --dark-green: #0b3d2e;
+  --soft-green: #a1f3a5;
+  --card-bg: #ffffff;
+  --text-black: #000000;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  background:var(--soft-green);
+  font-family:'Inter',sans-serif;
+  color:var(--text-black);
+  line-height:1.8;
+  padding:50px 20px;
+}
+
+/* BACK TO HOME BUTTON */
+.back-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #0b3d2e;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.back-home:hover {
+  background: #0b3d2e;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.header{text-align:center;max-width:900px;margin:0 auto 80px;}
+.header h1{
+  font-family:'Playfair Display', serif;
+  font-size:60px;
+  color:#1f4d3a;   /* deep natural green */
+  margin-bottom:20px;
+  letter-spacing:1.5px;
+}
+
+.header p{font-size:22px;}
+.section{max-width:1200px;margin:auto;margin-bottom:80px;}
+.section h2{
+  font-family:'Playfair Display', serif;
+  font-size:42px;
+  color:#1f4d3a;   /* same tone for consistency */
+  margin-bottom:40px;
+  text-align:center;
+  letter-spacing:1.2px;
+}
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+
+.recipe-card{
+  background:var(--card-bg);
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+
+.recipe-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:20px;
+}
+
+.recipe-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  color:var(--dark-green);
+  margin-bottom:12px;
+}
+.recipe-card p{font-size:17px;margin-bottom:15px;}
+.recipe-card h4{font-size:19px;margin:18px 0 8px;}
+.recipe-card ul, .recipe-card ol{padding-left:20px;}
+.recipe-card li{font-size:16px;margin-bottom:8px;}
+.quote{text-align:center;font-size:22px;font-style:italic;margin-top:80px;color:var(--dark-green);}
+</style>
+</head>
+
+<body>
+
+<!-- BACK TO HOME BUTTON -->
+<a href="index.html" class="back-home">← Back to Home</a>
+
+<div class="header">
+  <h1>Healthy Living</h1>
+  <p>
+    Healthy living is not about strict rules or dieting.  
+    It’s about making simple, mindful choices that nourish your body and soul.
+  </p>
+</div>
+
+<div class="section">
+<h2>Healthy Recipes</h2>
+
+<div class="recipe-grid">
+
+<!-- Vegetable Oats -->
+<div class="recipe-card">
+<img src="./images/vegetable-oats.jpg">
+<h3>Vegetable Oats</h3>
+<p>Nutritious, fiber-rich meal ideal for breakfast or dinner.</p>
+
+<p><strong>Benefit:</strong> Helps improve digestion, keeps you full longer, and supports heart health.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup rolled oats</li>
+<li>2 cups water or vegetable stock</li>
+<li>1 onion (finely chopped)</li>
+<li>1 carrot (grated)</li>
+<li>½ cup mixed vegetables</li>
+<li>1 tsp olive oil</li>
+<li>Salt & pepper</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Heat oil in a pan and sauté onions until soft.</li>
+<li>Add vegetables and cook for 3–4 minutes.</li>
+<li>Mix in oats and lightly roast for 30 seconds.</li>
+<li>Add water/stock and seasoning.</li>
+<li>Simmer until oats are soft and creamy.</li>
+</ol>
+</div>
+
+<!-- Curd Rice -->
+<div class="recipe-card">
+<img src="./images/curd-rice.jpg">
+<h3>Curd Rice</h3>
+<p>Cooling, probiotic-rich comfort food.</p>
+
+<p><strong>Benefit:</strong> Improves gut health, cools the body, and aids digestion.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup cooked rice</li>
+<li>1½ cups fresh curd</li>
+<li>Salt to taste</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Mash cooked rice slightly.</li>
+<li>Add curd and salt.</li>
+<li>Mix well until creamy.</li>
+<li>Serve chilled or at room temperature.</li>
+</ol>
+</div>
+
+<!-- Fruit Yogurt Bowl -->
+<div class="recipe-card">
+<img src="./images/fruit-yogurt-bowl.jpg">
+<h3>Fruit Yogurt Bowl</h3>
+<p>Refreshing bowl packed with vitamins.</p>
+
+<p><strong>Benefit:</strong> Boosts immunity, improves skin health, and provides natural energy.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup thick yogurt</li>
+<li>½ cup mixed fruits</li>
+<li>1 tbsp honey</li>
+<li>1 tbsp nuts/seeds</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Add yogurt to bowl.</li>
+<li>Top with chopped fruits.</li>
+<li>Drizzle honey.</li>
+<li>Sprinkle nuts and serve.</li>
+</ol>
+</div>
+
+<!-- Vegetable Soup -->
+<div class="recipe-card">
+<img src="./images/vegetable-soup.jpg">
+<h3>Vegetable Soup</h3>
+<p>Light, warm and digestion-friendly.</p>
+
+<p><strong>Benefit:</strong> Hydrates the body, boosts immunity, and supports weight management.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup chopped vegetables</li>
+<li>2 cups water or broth</li>
+<li>1 garlic clove</li>
+<li>Salt & pepper</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Sauté garlic lightly.</li>
+<li>Add vegetables and water.</li>
+<li>Simmer for 10–15 minutes.</li>
+<li>Season and serve hot.</li>
+</ol>
+</div>
+
+<!-- Sprouts Salad -->
+<div class="recipe-card">
+<img src="./images/sprouts-salad.jpg">
+<h3>Sprouts Salad</h3>
+<p>High-protein, fresh and filling.</p>
+
+<p><strong>Benefit:</strong> Builds muscle, improves metabolism, and provides plant-based protein.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup steamed sprouts</li>
+<li>1 onion (chopped)</li>
+<li>1 tomato (chopped)</li>
+<li>Lemon juice</li>
+<li>Salt</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Mix sprouts with vegetables.</li>
+<li>Add salt and lemon juice.</li>
+<li>Toss well and serve fresh.</li>
+</ol>
+</div>
+
+<!-- Paneer Stir Fry -->
+<div class="recipe-card">
+<img src="./images/paneer-vegetable-stir-fry.jpg">
+<h3>Paneer Vegetable Stir Fry</h3>
+<p>Protein-rich quick healthy meal.</p>
+
+<p><strong>Benefit:</strong> Strengthens bones, supports muscle growth, and keeps you energized.</p>
+
+<h4>Ingredients</h4>
+<ul>
+<li>100g paneer cubes</li>
+<li>1 cup mixed vegetables</li>
+<li>1 tsp oil</li>
+<li>Salt & spices</li>
+</ul>
+
+<h4>Method</h4>
+<ol>
+<li>Heat oil and sauté paneer.</li>
+<li>Add vegetables and stir fry.</li>
+<li>Season and cook until tender.</li>
+<li>Serve warm.</li>
+</ol>
+</div>
+
+</div>
+</div>
+
+<p class="quote">
+Healthy living is a journey, not a destination.  
+Progress matters more than perfection.
+</p>
+
+</body>
+</html>

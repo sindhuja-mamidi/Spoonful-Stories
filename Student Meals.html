@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Student Meal Stories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --dark-brown: #367894;
+  --sea-blue: #b7e4f2; /* 🌊 sea blue */
+  --card-bg: #ffffff;
+  --text-black: #000000;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background: var(--sea-blue);
+  font-family:'Inter',sans-serif;
+  color:var(--text-black);
+  line-height:1.8;
+  padding:50px 20px;
+}
+
+/* BACK TO HOME BUTTON */
+.back-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #ffffff;
+  color: #0b4f6c;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+.back-home:hover {
+  background: #0b4f6c;
+  color: #ffffff;
+}
+
+.header{
+  text-align:center;
+  max-width:900px;
+  margin:0 auto 80px;
+}
+.header h1{
+  font-family:'Playfair Display', serif;
+  font-size:56px;
+  color:#1e4f66;          /* calm slate blue */
+  margin-bottom:20px;
+  letter-spacing:1.4px;
+}
+
+.header p{
+  font-size:22px;
+}
+
+.section{
+  max-width:1200px;
+  margin:auto;
+  margin-bottom:80px;
+}
+.section h2{
+  font-family:'Playfair Display', serif;
+  font-size:40px;
+  color:#1e4f66;          /* same tone for consistency */
+  margin-bottom:40px;
+  text-align:center;
+  letter-spacing:1.2px;
+}
+
+.recipe-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px;
+}
+
+.recipe-card{
+  background:#fff;
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+}
+.recipe-card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:20px;
+}
+.recipe-card h3{
+  font-family:'Playfair Display',serif;
+  font-size:26px;
+  color:#0b4f6c;
+  margin-bottom:12px;
+}
+.recipe-card p{
+  font-size:17px;
+  margin-bottom:15px;
+}
+.recipe-card h4{
+  font-size:19px;
+  margin:15px 0 8px;
+}
+.recipe-card ul,
+.recipe-card ol{
+  padding-left:20px;
+}
+.recipe-card li{
+  font-size:16px;
+  margin-bottom:6px;
+}
+
+.quote{
+  text-align:center;
+  font-size:22px;
+  font-style:italic;
+  margin-top:80px;
+  color:#0b4f6c;
+}
+</style>
+</head>
+
+<body>
+
+<a href="index.html" class="back-home">← Back to Home</a>
+
+<div class="header">
+  <h1>Student Meal Stories</h1>
+  <p>
+    Budget-friendly, quick & tasty meals  
+    every student survives on 💙
+  </p>
+</div>
+
+<div class="section">
+<h2>Easy Student-Friendly Recipes</h2>
+
+<div class="recipe-grid">
+
+<!-- Fried Maggi -->
+<div class="recipe-card">
+<img src="./images/fried-maggie.jpg">
+<h3>Fried Maggi</h3>
+<p>Leftover or fresh Maggi tossed with veggies and sauces.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>1 pack Maggi noodles</li>
+<li>1 small onion, chopped</li>
+<li>1 small carrot, chopped</li>
+<li>1 small capsicum, chopped</li>
+<li>2 tsp soy sauce</li>
+<li>1 tsp chili sauce (optional)</li>
+<li>Oil as required</li>
+<li>Salt to taste</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Boil Maggi noodles for 2 minutes, drain and keep aside.</li>
+<li>Heat oil in a pan and sauté onions and other veggies until slightly soft.</li>
+<li>Add cooked noodles, soy sauce, chili sauce, and salt.</li>
+<li>Stir-fry for 2-3 minutes on high heat till well combined.</li>
+<li>Serve hot.</li>
+</ol>
+</div>
+
+<!-- Scrambled Eggs -->
+<div class="recipe-card">
+<img src="./images/scrambled-eggs.jpg">
+<h3>Scrambled Eggs</h3>
+<p>Fluffy eggs cooked with onions and mild spices.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>2-3 eggs</li>
+<li>1 small onion, finely chopped</li>
+<li>1 tbsp milk</li>
+<li>Salt and pepper to taste</li>
+<li>1 tsp butter or oil</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Beat eggs with milk, salt, and pepper until fluffy.</li>
+<li>Heat butter in a pan and sauté onions till soft.</li>
+<li>Pour egg mixture into the pan.</li>
+<li>Gently stir continuously until eggs are cooked but still soft.</li>
+<li>Serve warm with bread or toast.</li>
+</ol>
+</div>
+
+<!-- Paneer Sandwich -->
+<div class="recipe-card">
+<img src="./images/paneer-sandwich.jpg">
+<h3>Paneer Sandwich</h3>
+<p>Grilled sandwich stuffed with spiced paneer.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>4 slices of bread</li>
+<li>100g paneer, crumbled</li>
+<li>1 small onion, finely chopped</li>
+<li>1 small tomato, chopped</li>
+<li>1 tsp chaat masala</li>
+<li>Butter for spreading</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Mix paneer with onion, tomato, and chaat masala.</li>
+<li>Spread butter on bread slices.</li>
+<li>Place paneer mixture between two slices.</li>
+<li>Grill on a pan or sandwich maker till golden brown.</li>
+<li>Cut diagonally and serve hot.</li>
+</ol>
+</div>
+
+<!-- Lemon Rice -->
+<div class="recipe-card">
+<img src="./images/lemon-rice.jpg">
+<h3>Lemon Rice</h3>
+<p>South Indian rice flavored with lemon and peanuts.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup cooked rice</li>
+<li>1 tbsp oil</li>
+<li>1/2 tsp mustard seeds</li>
+<li>1/2 tsp turmeric powder</li>
+<li>1 tbsp peanuts</li>
+<li>1 tbsp lemon juice</li>
+<li>Salt to taste</li>
+<li>Curry leaves few</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Heat oil in a pan and add mustard seeds and curry leaves.</li>
+<li>Add peanuts and fry till golden.</li>
+<li>Add turmeric powder and mix well.</li>
+<li>Add cooked rice and salt, mix gently.</li>
+<li>Turn off heat and add lemon juice. Mix well.</li>
+<li>Serve warm.</li>
+</ol>
+</div>
+
+<!-- Cheese Toast -->
+<div class="recipe-card">
+<img src="./images/cheese-toast.jpg">
+<h3>Cheese Toast</h3>
+<p>Golden toasted bread with melted cheese and herbs.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>2 slices bread</li>
+<li>2 slices cheese</li>
+<li>Butter for spreading</li>
+<li>Oregano or mixed herbs</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Spread butter on bread slices.</li>
+<li>Place cheese on one slice and sprinkle herbs.</li>
+<li>Cover with another slice and grill in sandwich maker or pan.</li>
+<li>Cook until golden and cheese melts.</li>
+<li>Serve hot with ketchup or sauce.</li>
+</ol>
+</div>
+
+<!-- Egg Fried Rice -->
+<div class="recipe-card">
+<img src="./images/egg-fried-rice.jpg">
+<h3>Egg Fried Rice</h3>
+<p>Rice stir-fried with eggs, veggies, and sauces.</p>
+<h4>Ingredients</h4>
+<ul>
+<li>1 cup cooked rice</li>
+<li>2 eggs</li>
+<li>1 small carrot, chopped</li>
+<li>1 small capsicum, chopped</li>
+<li>1 small onion, chopped</li>
+<li>1-2 tsp soy sauce</li>
+<li>Salt & pepper to taste</li>
+<li>2 tsp oil</li>
+</ul>
+<h4>Method</h4>
+<ol>
+<li>Heat oil in a pan and sauté onion, carrot, and capsicum.</li>
+<li>Push veggies to the side and scramble eggs in the pan.</li>
+<li>Add cooked rice, soy sauce, salt, and pepper.</li>
+<li>Mix everything well and fry for 3-4 minutes on medium heat.</li>
+<li>Serve hot.</li>
+</ol>
+</div>
+
+</div>
+</div>
+
+<p class="quote">
+Good food fuels great dreams — even on a student budget.
+</p>
+
+</body>
+</html>
