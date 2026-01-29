@@ -116,21 +116,39 @@
       color:#444;
     }
 
-    /* RESPONSIVE */
-    @media(max-width:900px){
-      .cards{
-        grid-template-columns:repeat(2,1fr);
-      }
-    }
+/* ===== MOBILE FIX  ===== */
+@media (max-width: 768px) {
 
-    @media(max-width:600px){
-      .cards{
-        grid-template-columns:1fr;
-      }
-      .hero h1{
-        font-size:2.6rem;
-      }
-    }
+  body {
+    padding: 10px !important;
+  }
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .container,
+  .content,
+  .cards,
+  .section {
+    width: 100% !important;
+    flex-direction: column !important;
+  }
+
+  h1 {
+    font-size: 1.6rem !important;
+  }
+
+  h2 {
+    font-size: 1.3rem !important;
+  }
+
+  p {
+    font-size: 1rem !important;
+  }
+
+}
   </style>
 </head>
 
@@ -214,4 +232,5 @@
 
 </body>
 </html>
+
 
